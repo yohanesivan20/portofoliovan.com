@@ -7,27 +7,33 @@
     <link rel="stylesheet" href="asset/css/style.css" />
     <link rel="stylesheet" href="asset/css/jquery.mCustomScrollbar.min.css" />
     <!-- bootstrap -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="icon" type="image/png" href="favicon.ico">
 
     <script src="asset/js/app.js"></script>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <nav>
-      <div class="nav-brand">portofolio.<font color="#17d1ac">van</font></div>
-      <div class="nav-items">
-        <ul class="nav-links">
-          <li><a href="#banner" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <ul class="nav-phone">
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=6282244034216" class="nav-link"><i class="fa fa-phone"></i></a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <div class="navbar-brand">portofolio.<font color="#17d1ac">van</font></div>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav mb-2 pt-2">
+            <li class="nav-item"><a href="#banner" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          </ul>  
+        </div>
+
+        <div class="wa-nav-button d-flex ms-auto">
+          <a href="https://api.whatsapp.com/send?phone=6282244034216" class="nav-link"><i class="fa fa-phone"></i></a>
+        </div>
       </div>
     </nav>
 
@@ -38,215 +44,259 @@
     </div>
 
     <section class="banner" id="banner">
-      <div class="text-section">
-        <h6>Hi Guys!</h6>
-        <h1 class="large-title"><font color="#17d1ac">I'm</font> Ivan.</h1>
-        <h1 class="large-title">A <span id="skill-info"></span></h1>
-        <div class="social">
-          <a href="https://www.facebook.com/IvanDanasuta/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/yohanes_van/?hl=en"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/ivan-danasuta-946006217/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.youtube.com/channel/UCjhYiQG1brL_sLDhlo0VVqw/featured"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 my-auto text-section">
+            <h6>Hi Guys!</h6>
+            <h1 class="large-title"><font color="#17d1ac">I'm</font> Ivan.</h1>
+            <h1 class="large-title">A <span id="skill-info"></span></h1>
+            <div class="social">
+              <a target="_blank" href="https://www.facebook.com/IvanDanasuta/"><i class="fab fa-facebook-f"></i></a>
+              <a target="_blank" href="https://www.instagram.com/yohanes_van/?hl=en"><i class="fab fa-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/ivan-danasuta-946006217/"><i class="fab fa-linkedin"></i></a>
+              <a target="_blank" href="https://github.com/yohanesivan20/"><i class="fab fa-github"></i></a>
+              <a target="_blank" href="https://gitlab.com/ivandanasuta4"><i class="fab fa-gitlab"></i></a>
+            </div>
+          </div>
 
-      <div class="jumbotron-img">
-        <img src="asset/img/foto.png" alt="" />
-      </div>
-      <div class="detail-section">
-        <h1>Do you know who I am?</h1>
-        <p class="details">Let's get to know me more through this website. Then here is my newest curriculum vitae, you can download it below or scroll down for more details.</p>
-        <a href="CV Ivan Danasuta.pdf" class="cv-btn">Download CV</a>
+          <div class="col-lg-5 my-auto jumbotron-img">
+            <img src="asset/img/foto.png" alt="" />
+          </div>
+
+          <div class="col-lg-3 my-auto detail-section">
+            <h1>Do you know who I am?</h1>
+            <p class="details">Let's get to know me more through this site. Here is my newest curriculum vitae, you can download it below or scroll down for more details.</p>
+            <a href="CV Ivan Danasuta 2024.pdf" class="cv-btn">Download CV</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="about" id="about">
-      <div class="about-img">
-        <img src="asset/img/profile.png" alt="" />
-      </div>
-      <div class="about-text">
-        <h1 class="about-large-title">About Me</h1>
-        <h2 class="about-mediumlarge-title">Engineering Students</h2>
-        <p class="detail-about">
-          I'm a 1999 child who has an interest in creative art work. This is evident from my work experience when participating in several organizations or comittees within the campus environment when i often joined or trusted in
-          <b>Event Organizer Division</b> and <b>Design/Documentation Division</b>. I hope to be able to use all of my skills that i have learned while studying in the world of work.
-        </p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 my-auto about-img">
+            <img src="asset/img/profile.png" alt="" />
+          </div>
+          <div class="col-lg-6 my-auto about-text">
+            <h1 class="about-large-title">About Me</h1>
+            <h2 class="about-mediumlarge-title">Software Developer</h2>
+            <p class="detail-about">
+              A junior back-end developer with <b>3 years of experience using PHP and Laravel Framework</b> to develop, test, and observe enterprise software applications. Always having a desire to grow and enjoy learning new things.
+              I hope i will be able to use all of my technical skills that i have learned to <b>help your business.</b>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="experience" id="experience">
-      <div class="experience-heading">
-        <h1>Voluntary Experiences</h1>
-        <div class="garis"></div>
-      </div>
-      <div class="experience-body" id="experience-1">
-        <div class="experience-content">
-          <h4>Designer and Layouter</h4>
-          <h5 class="green">Team Chairman</h5>
-          <h5 class="gray">2018 - 2020</h5>
-          <p>Managed and set the magazine design theme every month with all members of design and layout division in <span>Warta Ubaya</span>. Also Organized design results from all division members and submit it to the editor chief</p>
-        </div>
-        <div class="experience-content">
-          <h4>Event Director</h4>
-          <h5 class="green">Coordinator</h5>
-          <h5 class="gray">2018 - 2019</h5>
-          <p>Created concept and timeline of <span>Informatics Logical Programming Competition</span> events, became a master of ceremony at some activity, and created some games both in video games or outbound games</p>
-        </div>
-        <div class="experience-content">
-          <h4>Multimedia Team</h4>
-          <h5 class="green">Coordinator</h5>
-          <h5 class="gray">2018 - 2019</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nesciunt. Vero ab earum blanditiis optio tempore cum quam vitae saepe accusantium. Dolorem magni accusantium hic repellendus, ipsam aperiam totam a.</p>
-        </div>
-      </div>
-      <div class="experience-body" id="experience-2">
-        <div class="experience-content">
-          <h4>Videographer and Editor</h4>
-          <h5 class="green">Member of Division</h5>
-          <h5 class="gray">2021</h5>
-          <p>Maximized event publication with cinematic videos and created cinematic videos for event's documentation.</p>
-        </div>
-        <div class="experience-content">
-          <h4>Event Chairman</h4>
-          <h5 class="green">Event Chairman</h5>
-          <h5 class="gray">Apr 2019 - May 2019</h5>
-          <p>
-            Guided the internal operations event preparation which consists 19 staffs, and 28 volunteers. Initiated 'jumpstreet' concept for social event of <span>Unit Kegiatan Kerohanian Katolik (UKKK)</span> at University of Surabaya.
-          </p>
-        </div>
-        <div class="experience-content">
-          <h4>Event Director</h4>
-          <h5 class="green">Coordinator</h5>
-          <h5 class="gray">Mar 2021 - May 2021</h5>
-          <p>Created concept and timeline of the concert, looked for guest starts (Saykoji and HSM Worship) for <span>CONSPIRITUAL 2021</span> at University of Surabaya.</p>
-        </div>
-      </div>
-      <div class="experience-footer">
-        <div class="scroll">
-          <ul class="scroll-button">
-            <li onclick="page1()">
-              <i class="fa fa-circle fa-xs"></i>
-            </li>
-            <li onclick="page2()">
-              <i class="fa fa-circle fa-xs"></i>
-            </li>
-            <!-- <li onclick="page3()">
-              <i class="fa fa-circle fa-xs"></i>
-            </li> -->
-          </ul>
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12 experience-heading pl-5">
+              <h1>Voluntary Experiences</h1>
+              <div class="garis"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pt-5 pl-5 experience-body" id="experience-1">
+              <div class="row">
+                <div class="col-lg-4 experience-content">
+                  <h4>Designer and Layouter</h4>
+                  <h5 class="green">Team Chairman</h5>
+                  <h5 class="gray">2018 - 2020</h5>
+                  <p>Managed and set the magazine design theme every month with all members of design and layout division in <span>Warta Ubaya</span>. Also Organized design results from all division members and submit it to the editor chief</p>
+                </div>
+                <div class="col-lg-4 experience-content">
+                  <h4>Event Director</h4>
+                  <h5 class="green">Coordinator</h5>
+                  <h5 class="gray">2018 - 2019</h5>
+                  <p>Created concept and timeline of <span>Informatics Logical Programming Competition</span> events, became a master of ceremony at some activity, and created some games both in video games or outbound games</p>
+                </div>
+                <div class="col-lg-4 experience-content">
+                  <h4>Multimedia Team</h4>
+                  <h5 class="green">Coordinator</h5>
+                  <h5 class="gray">2018 - 2019</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nesciunt. Vero ab earum blanditiis optio tempore cum quam vitae saepe accusantium. Dolorem magni accusantium hic repellendus, ipsam aperiam totam a.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pt-5 pl-5 experience-body" id="experience-2">
+              <div class="row">
+                <div class="col-lg-4 experience-content">
+                  <h4>Videographer and Editor</h4>
+                  <h5 class="green">Member of Division</h5>
+                  <h5 class="gray">2021</h5>
+                  <p>Maximized event publication with cinematic videos and created cinematic videos for event's documentation.</p>
+                </div>
+                <div class="col-lg-4 experience-content">
+                  <h4>Event Chairman</h4>
+                  <h5 class="green">Event Chairman</h5>
+                  <h5 class="gray">Apr 2019 - May 2019</h5>
+                  <p>
+                    Guided the internal operations event preparation which consists 19 staffs, and 28 volunteers. Initiated 'jumpstreet' concept for social event of <span>Unit Kegiatan Kerohanian Katolik (UKKK)</span> at University of Surabaya.
+                  </p>
+                </div>
+                <div class="col-lg-4 experience-content">
+                  <h4>Event Director</h4>
+                  <h5 class="green">Coordinator</h5>
+                  <h5 class="gray">Mar 2021 - May 2021</h5>
+                  <p>Created concept and timeline of the concert, looked for guest starts (Saykoji and HSM Worship) for <span>CONSPIRITUAL 2021</span> at University of Surabaya.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="experience-footer">
+              <div class="scroll">
+                <ul class="scroll-button">
+                  <li onclick="page1()">
+                    <i class="fa fa-circle fa-xs"></i>
+                  </li>
+                  <li onclick="page2()">
+                    <i class="fa fa-circle fa-xs"></i>
+                  </li>
+                  <!-- <li onclick="page3()">
+                    <i class="fa fa-circle fa-xs"></i>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="portofolio" id="portofolio">
-      <div class="porto-heading">
-        <h1>Portofolio</h1>
-        <p>Here it is some portofolio of my skills</p>
-      </div>
-      <div class="porto-body">
-        <div class="porto-box open-modal-photography">
-          <div class="porto-img">
-            <div class="porto-type">
-              <a>Photography & Videography</a>
-              <!-- <button class="open-modal">Photography & Videography</button> -->
-            </div>
-            <img src="asset/img/photography.JPG" alt="" />
-          </div>
-          <div class="porto-text">
-            <p>Yes, I love this things so much. Captured my nature travel moments. Because every single moment has a good story.</p>
-          </div>
-        </div>
+    <section class="work-experience" id="work-experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 my-auto">
 
-        <div class="bg-modal" id="modal-photography">
-          <div class="modal">
-            <div class="modal-header">
-              <h1>Photography & Videography</h1>
-              <h3>All taken by myself!</h3>
-              <button class="close-modal">X</button>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <div class="row work-content mt-5">
+              <div class="col-lg-2 pt-2">
+                <h6>2018 - 2020</h6>
+              </div>
+              <div class="col-lg-10">
+                <div class="work-header">
+                  <h5>Head of Design - <a href="https://www.instagram.com/wartaubaya/" target="_blank">Warta Ubaya</a></h5>
+                </div>
+                <div class="work-body">
+                  <p class="mt-2">Successfully delivered high impact in leading my design teams to create a good design for magazine's university every month.</p>
+                </div>
+                <div class="work-tools">
+                  <ul class="flex flex-wrap">
+                    <li>
+                      <div class="tools">
+                        Adobe Photoshop
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tools">
+                        Adobe Indesign
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
-              <div class="modal-preview">
-                <div class="preview-image" id="image-1">
-                  <img src="asset/img/photography/preview/photo-1.jpg" alt="" />
-                  <p class="info"><strong>Title</strong>Description are here</p>
+            <div class="row work-content mt-4 mb-2">
+              <div class="col-lg-2 pt-2">
+                <h6>2022 - 2022</h6>
+              </div>
+              <div class="col-lg-10">
+                <div class="work-header">
+                  <h5>Social Media Creator - <a href="https://www.instagram.com/imagineexhibition.id/" target="_blank">Imagine Exhibition</a></h5>
+                </div>
+                <div class="work-body">
+                  <p class="mt-2">Make a daily Instagram content for Imagine Exhibition & Fantasi D'Print 's account and also create an advertising content ideas.</p>
+                </div>
+                <div class="work-tools">
+                  <ul class="flex flex-wrap">
+                    <li>
+                      <div class="tools">
+                        Adobe Photoshop
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tools">
+                        Adobe Premiere Pro
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tools">
+                        Capcut
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row work-content mt-4 mb-4">
+              <div class="col-lg-2 pt-2">
+                <h6>2022 - PRESENT</h6>
+              </div>
+              <div class="col-lg-10">
+                <div class="work-header">
+                  <h5>Software Developer - <a href="https://mitra.indogrosir.co.id/" target="_blank">Indomaret Group</a></h5>
+                </div>
+                <div class="work-body">
+                  <p class="mt-2">Develop and design some API for Indogrosir Mobile Application such as Surveyor Apps, Advisor Apps and also maintain a web-based Content Management System of Toko Mitra Indogrosir.</p>
+                </div>
+                <div class="work-tools">
+                  <ul class="mt-2 flex flex-wrap">
+                    <li class="mt-2">
+                      <div class="tools">
+                        MySQL
+                      </div>
+                    </li>
+                    <li class="mt-2">
+                      <div class="tools">
+                        PHP
+                      </div>
+                    </li>
+                    <li class="mt-2">
+                      <div class="tools">
+                        Javascript
+                      </div>
+                    </li>
+                    <li class="mt-2">
+                      <div class="tools">
+                        Laravel
+                      </div>
+                    </li>
+                    <li class="mt-2">
+                      <div class="tools">
+                        RestAPI
+                      </div>
+                    </li>
+                    <li class="mt-2">
+                      <div class="tools">
+                        Postman
+                      </div>
+                    </li>
+                    <li class="mt-2">
+                      <div class="tools">
+                        Github
+                      </div>
+                    </li>
+                    <li class="mt-2">
+                      <div class="tools">
+                        Linux
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="porto-box open-modal-design">
-          <div class="porto-img">
-            <div class="porto-type">
-              <a>Graphic Design</a>
-            </div>
-            <img src="asset/img/Portofolio 1.jpg" alt="" />
-          </div>
-          <div class="porto-text">
-            <p>I have 6 years experience to be a graphic designer. I started to design when i decide to join a magazine editor in Senior High School.</p>
-          </div>
-        </div>
-
-        <div class="bg-modal" id="modal-photography">
-          <div class="modal">
-            <div class="modal-header">
-              <h1>Graphic Design</h1>
-              <h3>All created by myself!</h3>
-              <button class="close-modal">X</button>
-            </div>
-            <div class="modal-body">
-              <div class="modal-preview">
-                <div class="preview-image" id="image-1">
-                  <img src="asset/img/photography/preview/photo-1.jpg" alt="" />
-                  <p class="info"><strong>Title</strong>Description are here</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="porto-box open-modal-webdev">
-          <div class="porto-img">
-            <div class="porto-type">
-              <a>Web Development</a>
-            </div>
-            <img src="asset/img/sakramen.jpeg" alt="" />
-          </div>
-          <div class="porto-text">
-            <p>Develope a website for our business is the important way to have a good business.</p>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="contact-text">
-        <h2>You know about me.</h2>
-        <h1>Now! Let's talk about you.</h1>
-      </div>
-      <div class="contact-qna">
-        <h1>Send Me A Message</h1>
-        <div class="form-body">
-          <div class="form-group">
-            <label for="Name">Full Name*</label>
-            <input type="text" class="form-control" id="name" placeholder="Input Your Name" />
-          </div>
-          <div class="form-group">
-            <label>Email Address*</label>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Example : ivandanasuta4@gmail.com" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Personal Message*</label>
-            <textarea style="resize: none" class="form-control" id="exampleInputEmail1" placeholder="Masukan Pesan Anda"></textarea>
-          </div>
-          <div class="form-group">
-            <button type="button" class="btnSubmit">Send Message</button>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="credit" id="credit">
       <p>This Design Is Made With <b>HTML + CSS 5</b></p>
     </section>
