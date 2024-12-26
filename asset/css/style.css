@@ -298,6 +298,14 @@ section.work-experience {
   padding-right: 150px;
 }
 
+.work-header a {
+  color: #17d1ac;
+}
+
+.work-header a:hover {
+  color: #00ffcc;
+}
+
 .work-header-content h1 {
   padding-right: 50px;
   line-height: 1.5;
@@ -330,139 +338,83 @@ section.work-experience {
 
 /* Section Portofolio */
 section.portofolio {
-  width: 100%;
-  height: 110vh;
+  background-color: #000000;
   box-sizing: border-box;
-  background-color: rgb(245, 245, 245);
-  font-family: "calibri";
+}
+
+section.portofolio .porto-head {
+  width: 100%;
+  height: 76px;
+  background-color: #17d1ac;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.porto-heading h1 {
-  color: #151515;
-  font-size: 30px;
-  margin: 0px;
-  padding-top: 10px;
-}
-
-.porto-heading p {
-  color: #17d1ac;
-  font-size: 12px;
-  font-weight: 600;
-  margin: 0px;
-  padding: 0px;
-}
-
-.porto-heading {
-  text-align: center;
-  margin: 20px 0px;
-}
-
-.porto-box {
-  background-color: #2b2b2b;
-  width: 350px;
-  height: 500px;
-  margin: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-}
-
-.porto-body {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.porto-img {
-  width: 100%;
-  height: 70%;
-}
-
-.porto-img img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: 20% 10% 0 0;
-}
-
-.porto-text {
-  width: 100%;
-  height: 30%;
-  background-color: #1e1e1e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.porto-text p {
-  margin: 0px;
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-family: calibri;
-  display: block;
-  display: -webkit-box;
-  max-width: 80%;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.porto-text a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.porto-type {
-  display: flex;
-  justify-content: center;
-}
-
-.porto-type a {
-  font-family: "calibri";
-  color: #17d1ac;
-  background-color: #151515;
-  padding: 10px 15px;
-  cursor: pointer;
-  z-index: 0;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 0px 0px 10px 10px;
-}
-
-.porto-type a:hover {
-  text-decoration: underline;
-  transform: translateY(-5px);
-  transition: all ease 0.3s;
-}
-
-.full-screen {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  margin-top: 0;
   color: white;
 }
 
-.hidden {
-  display: none;
+.porto-head h1 {
+  text-align: center;
 }
 
-.porto-box:hover {
-  transform: translateY(-10px);
-  transition: all ease 0.3s;
+.porto-tools {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
+
+.porto-tools .box {
+  background-color:  #6b6b6b;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #17d1ac;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.porto-tools .box-icon img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.porto-tools .box-title {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.porto-video-head {
+  background-color: #003444;
+  color: white;
+}
+
+.porto-video-head h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.porto-video-content {
+  margin-top: 50px;
+}
+
+.porto-video-content .video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/* End Section Portofolio */
+
+
 /* Section Contact */
 section.contact {
   width: 100%;
