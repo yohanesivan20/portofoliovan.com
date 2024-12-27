@@ -200,6 +200,7 @@ p.detail-about {
   color: #ffffff;
   width: 400px;
   padding-top: 20px;
+  padding-right: 10px;
   line-height: 30px;
   font-size: 15px;
   text-align: justify;
@@ -531,12 +532,38 @@ section.credit {
     padding-bottom: 10px;
   }
 
-  .jumbotrom-img {
-    align-items: center;
-    justify-content: center;
+  .jumbotron-img img {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .detail-section {
     padding-left: 100px;
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  .detail-section .cv-btn {
+    display: inline-grid;
+  }
+
+  section.about .about-text {
+    text-align: center;
+    align-items: center;
+  }
+
+  section.about .detail-about {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  section.experience {
+    padding-right: 20px;
+  }
+
+  section.work-experience .work-header-content {
+    padding-left: 10px;
+    padding-top: 25px;
   }
 }
