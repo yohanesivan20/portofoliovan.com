@@ -360,9 +360,12 @@ section.portofolio .porto-head {
 
 .porto-tools {
   display: flex;
-  gap: 30px;
   justify-content: center;
 }
+
+/* .porto-tools .gap-20 {
+  gap: 5px;
+} */
 
 .porto-tools .box {
   background-color:  #6b6b6b;
@@ -412,6 +415,15 @@ section.portofolio .porto-head {
   height: 100%;
   border: none;
 }
+
+.instagram-video-container {
+  gap: 20px;
+}
+
+.instagram-video-container iframe {
+  border-radius: 10px;
+}
+
 /* End Section Portofolio */
 
 

@@ -173,7 +173,7 @@
     <section class="work-experience" id="work-experience">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 my-auto">
+          <div class="col-lg-6 my-auto p-2">
             <div class="work-header-content">
               <h1><b>Ivan's Working Experiences</b></h1>
               <p class="mt-4">These days, I work at Indomarco Prismatama (Indomaret Group)
@@ -382,27 +382,29 @@
       <div class="porto-head p-5">
         <h1><b>CREATIVE ZONE</b></h1>
       </div>
-      <div class="container">
-        <div class="porto-tools p-4">
-          <div class="col-lg-3 box">
-            <div class="box-icon"><img src="asset/logo/premiere-pro_5968575.png" alt=""></div>
-            <div class="box-title">Premiere Pro</div>
-            <div class="box-description">Sangat mahir dalam mengoperasikan Adobe Premiere Pro</div>
-          </div>
-          <div class="col-lg-3 box">
-            <div class="box-icon"><img src="asset/logo/photoshop_5968572.png" alt=""></div>
-            <div class="box-title">Photoshop</div>
-            <div class="box-description">Sangat mahir dalam mengoperasikan Adobe Photoshop</div>
-          </div>
-          <div class="col-lg-3 box">
-            <div class="box-icon"><img src="asset/logo/indesign_6422700.png" alt=""></div>
-            <div class="box-title">Indesign</div>
-            <div class="box-description">Baik dalam mengoperasikan Adobe Indesign</div>
-          </div>
-          <div class="col-lg-3 box">
-            <div class="box-icon"><img src="asset/logo/Capcut-logo.png" alt=""></div>
-            <div class="box-title">Capcut</div>
-            <div class="box-description">Sangat mahir dalam mengoperasikan Capcut for Mobile</div>
+      <div class="porto-tools p-4">
+        <div class="container">
+          <div class="row gap-20">
+            <div class="col-lg-3 col-md-6 box">
+              <div class="box-icon"><img src="asset/logo/premiere-pro_5968575.png" alt=""></div>
+              <div class="box-title">Premiere Pro</div>
+              <div class="box-description">Sangat mahir dalam mengoperasikan Adobe Premiere Pro</div>
+            </div>
+            <div class="col-lg-3 col-md-6 box">
+              <div class="box-icon"><img src="asset/logo/photoshop_5968572.png" alt=""></div>
+              <div class="box-title">Photoshop</div>
+              <div class="box-description">Sangat mahir dalam mengoperasikan Adobe Photoshop</div>
+            </div>
+            <div class="col-lg-3 col-md-6 box">
+              <div class="box-icon"><img src="asset/logo/indesign_6422700.png" alt=""></div>
+              <div class="box-title">Indesign</div>
+              <div class="box-description">Baik dalam mengoperasikan Adobe Indesign</div>
+            </div>
+            <div class="col-lg-3 col-md-6 box">
+              <div class="box-icon"><img src="asset/logo/Capcut-logo.png" alt=""></div>
+              <div class="box-title">Capcut</div>
+              <div class="box-description">Sangat mahir dalam mengoperasikan Capcut for Mobile</div>
+            </div>
           </div>
         </div>
       </div>
@@ -410,23 +412,23 @@
         <h3>EVENT VIDEO</h3>
       </div>
       <div class="porto-video-content">
-        <div class="video-container mb-4">
+        <div class="video-container pb-4">
           <iframe src="https://www.youtube.com/embed/qKldSICdNSA" 
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen></iframe>
         </div>
-        <div class="video-container mb-4">
+        <div class="video-container pb-4">
           <iframe src="https://www.youtube.com/embed/UA-8k-_uPxI" 
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen></iframe>
         </div>
         <div class="porto-video-head p-2">
-          <h3>CINEMATIC TRAVEL</h3>
+          <h3>CINEMATIC VIDEO</h3>
         </div>
         <div class="porto-video-content">
-          <div class="video-container mb-4">
+          <div class="video-container pb-4">
             <iframe src="https://www.youtube.com/embed/pXH3aim1Bus" 
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -476,6 +478,12 @@
       closeModal.addEventListener("click", function () {
         bgModal.classList.remove("show");
       });
+      
+      async function fetchInstagramViews() {
+        const accessToken = '';
+        const mediaId = '';
+      }
+
     </script>
   </body>
 </html>
