@@ -9,7 +9,6 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    <link rel="icon" type="image/png" href="favicon.ico">
 
     <script src="asset/js/app.js"></script>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
@@ -20,15 +19,16 @@
       <div class="container">
         <div class="navbar-brand">portofolio.<font color="#17d1ac">van</font></div>
     
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-center">
-          <ul class="navbar-nav mb-2 pt-2">
+          <ul class="navbar-nav mb-2 pt-2" id="navbar-nav">
             <li class="nav-item"><a href="#banner" class="nav-link active">Home</a></li>
             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
           </ul>  
         </div>
 
@@ -129,13 +129,13 @@
               <div class="row">
                 <div class="col-lg-4 experience-content">
                   <h4>Videographer and Editor</h4>
-                  <h5 class="green">Member of Division</h5>
+                  <h5 class="green">Surabaya Epik 2021</h5>
                   <h5 class="gray">2021</h5>
                   <p>Maximized event publication with cinematic videos and created cinematic videos for event's documentation.</p>
                 </div>
                 <div class="col-lg-4 experience-content">
                   <h4>Event Chairman</h4>
-                  <h5 class="green">Event Chairman</h5>
+                  <h5 class="green">Social Service UKKK Ubaya</h5>
                   <h5 class="gray">Apr 2019 - May 2019</h5>
                   <p>
                     Guided the internal operations event preparation which consists 19 staffs, and 28 volunteers. Initiated 'jumpstreet' concept for social event of <span>Unit Kegiatan Kerohanian Katolik (UKKK)</span> at University of Surabaya.
@@ -143,7 +143,7 @@
                 </div>
                 <div class="col-lg-4 experience-content">
                   <h4>Event Director</h4>
-                  <h5 class="green">Coordinator</h5>
+                  <h5 class="green">CONSPIRITUAL UBAYA 2021</h5>
                   <h5 class="gray">Mar 2021 - May 2021</h5>
                   <p>Created concept and timeline of the concert, looked for guest starts (Saykoji and HSM Worship) for <span>CONSPIRITUAL 2021</span> at University of Surabaya.</p>
                 </div>
@@ -222,7 +222,7 @@
                   <h5>Social Media Creator - <a href="https://www.instagram.com/imagineexhibition.id/" target="_blank">Imagine Exhibition</a></h5>
                 </div>
                 <div class="work-body">
-                  <p class="mt-2">Make a daily Instagram content for Imagine Exhibition & Fantasi D'Print 's account and also create an advertising content ideas.</p>
+                  <p class="mt-2">Created a daily Instagram content for Imagine Exhibition & Fantasi D'Print 's account and also create an advertising content ideas.</p>
                 </div>
                 <div class="work-tools">
                   <ul class="flex flex-wrap">
@@ -254,7 +254,8 @@
                   <h5>Backend Developer - <a href="https://omni.gg/blog/" target="_blank">OMNI IT Consulting</a></h5>
                 </div>
                 <div class="work-body">
-                  <div class="mt-2">Worked with software development and testing team members to design and develop solutions to meet client requirements for functionality, scalability, and performance.</div>
+                  <div class="mt-2"> Worked with software development and testing team members to design and develop solutions to 
+                    meet client requirements for functionality, scalability, and performance.</div>
                 </div>
                 <div class="work-tools">
                   <ul class="mt-2 flex flex-wrap">
@@ -306,7 +307,7 @@
                   <h5>Software Developer - <a href="https://mitra.indogrosir.co.id/" target="_blank">Indomaret Group</a></h5>
                 </div>
                 <div class="work-body">
-                  <p class="mt-2">Develop and design some API for Indogrosir Mobile Application such as Surveyor Apps, Advisor Apps and also maintain a web-based Content Management System of Toko Mitra Indogrosir.</p>
+                  <p class="mt-2">Developed a RESTful API to allow for interoperability between different systems. Maintained and monitored backend services to ensure optimal performance.</p>
                 </div>
                 <div class="work-tools">
                   <ul class="mt-2 flex flex-wrap">
@@ -379,32 +380,79 @@
       </div>
     </section>
 
-    <section class="portofolio" id="portofolio">
+    <section class="portfolio" id="portfolio">
       <div class="porto-head p-5">
         <h1><b>CREATIVE ZONE</b></h1>
       </div>
-      <div class="porto-tools p-4">
-        <div class="container">
-          <div class="row gap-20">
-            <div class="col-lg-3 col-md-6 box">
-              <div class="box-icon"><img src="asset/logo/premiere-pro_5968575.png" alt=""></div>
-              <div class="box-title">Premiere Pro</div>
-              <div class="box-description">Sangat mahir dalam mengoperasikan Adobe Premiere Pro</div>
-            </div>
-            <div class="col-lg-3 col-md-6 box">
-              <div class="box-icon"><img src="asset/logo/photoshop_5968572.png" alt=""></div>
-              <div class="box-title">Photoshop</div>
-              <div class="box-description">Sangat mahir dalam mengoperasikan Adobe Photoshop</div>
-            </div>
-            <div class="col-lg-3 col-md-6 box">
-              <div class="box-icon"><img src="asset/logo/indesign_6422700.png" alt=""></div>
-              <div class="box-title">Indesign</div>
-              <div class="box-description">Baik dalam mengoperasikan Adobe Indesign</div>
-            </div>
-            <div class="col-lg-3 col-md-6 box">
-              <div class="box-icon"><img src="asset/logo/Capcut-logo.png" alt=""></div>
-              <div class="box-title">Capcut</div>
-              <div class="box-description">Sangat mahir dalam mengoperasikan Capcut for Mobile</div>
+      <div class="container">
+        <div class="porto-tools p-4">
+          <div class="col-lg-3 box">
+            <div class="box-icon"><img src="asset/logo/premiere-pro_5968575.png" alt=""></div>
+            <div class="box-title">Premiere Pro</div>
+            <div class="box-description">Sangat mahir dalam mengoperasikan Adobe Premiere Pro</div>
+          </div>
+          <div class="col-lg-3 box">
+            <div class="box-icon"><img src="asset/logo/photoshop_5968572.png" alt=""></div>
+            <div class="box-title">Photoshop</div>
+            <div class="box-description">Sangat mahir dalam mengoperasikan Adobe Photoshop</div>
+          </div>
+          <div class="col-lg-3 box">
+            <div class="box-icon"><img src="asset/logo/indesign_6422700.png" alt=""></div>
+            <div class="box-title">Indesign</div>
+            <div class="box-description">Baik dalam mengoperasikan Adobe Indesign</div>
+          </div>
+          <div class="col-lg-3 box">
+            <div class="box-icon"><img src="asset/logo/Capcut-logo.png" alt=""></div>
+            <div class="box-title">Capcut</div>
+            <div class="box-description">Sangat mahir dalam mengoperasikan Capcut for Mobile</div>
+          </div>
+        </div>
+      </div>
+      <div class="porto-design-head p-2">
+        <h3>GRAPHIC DESIGN</h3>
+      </div>
+      <div class="porto-design-content">
+        <div class="design-carousel-container">
+          <div class="design-carousel-button">
+            <button class="round-button round-button-black" type="button" id="prev">
+              <svg class="icon-chevron-left" fill="none" height="11" width="8" xmlns="http://www.w3.org/2000/svg"><path d="M7.111 10.2.844 5.5 7.111.8" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+            <button class="round-button round-button-black" type="button" id="next">
+              <svg class="icon-chevron-right" fill="none" height="11" width="8" xmlns="http://www.w3.org/2000/svg"><path d="m.889.8 6.267 4.7-6.267 4.7" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </button>
+          </div>
+          <div class="design-carousel">
+            <div class="design-carousel-track grabbing">
+              <div class="design-carousel-slide">
+                <img src="asset/img/graphic-design/my-insta.png" alt="Slide 1">
+                <p class="design-carousel-caption">
+                  <a href="https://www.instagram.com/yohanes_van/" target="_blank">My Instagram Account (click here)</a>
+                </p>
+              </div>
+              <div class="design-carousel-slide">
+                <img src="asset/img/graphic-design/warta-ubaya.png" alt="Slide 2">
+                <p class="design-carousel-caption">
+                  <a href="https://drive.google.com/drive/folders/1Gu8xwRWSPXCg1Z3ZhPnrFCkyT5KrXhC1?usp=drive_link" target="_blank">Warta Ubaya (click here)</a>
+                </p>
+              </div>
+              <div class="design-carousel-slide">
+                <img src="asset/img/graphic-design/Untitled.png" alt="Slide 3">
+                <p class="design-carousel-caption">
+                  <a href="https://www.instagram.com/ktmmmjkt/" target="_blank">KTM Muda Mudi Jakarta (click here)</a>
+                </p>
+              </div>
+              <div class="design-carousel-slide">
+                <img src="asset/img/graphic-design/ukkk-ubaya.png" alt="Slide 4">
+                <p class="design-carousel-caption">
+                  <a href="https://www.instagram.com/ukkkstteresaavilaubaya/" target="_blank">UKKK Universitas Surabaya (click here)</a>
+                </p>
+              </div>
+              <div class="design-carousel-slide">
+                <img src="asset/img/graphic-design/Untitled.png" alt="Slide 5">
+                <p class="design-carousel-caption">
+                  <a href="https://www.instagram.com/b2bktmjkt/" target="_blank">B2B KTM Muda Mudi Jakarta (click here)</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -440,11 +488,20 @@
     </section>
 
     <section class="credit" id="credit">
-      <p>This Design Is Made With <b>HTML + CSS 5</b></p>
+      <p>This Design Is Made By <b>Ivan Danasuta</b> With <b>HTML, CSS 5, and Javascript </b></p>
     </section>
 
     <!-- Script -->
     <script>
+      const toggler = document.getElementById('navbar-toggler');
+      const menu = document.getElementById('navbar-nav');
+
+      // Toggle "show" class on menu when toggler is clicked
+      toggler.addEventListener('click', () => {
+          menu.classList.toggle('show');
+      });
+      
+
       $(window).on("load", function () {
         $("#experience-2").hide();
       });
@@ -466,25 +523,32 @@
         $("#experience-2").hide();
         $("#experience-3").show();
       }
-
-      //Modal Part
-      const bgModal = document.querySelector(".bg-modal");
-      const openModal = document.querySelector(".open-modal");
-      const closeModal = document.querySelector(".close-modal");
-
-      openModal.addEventListener("click", function () {
-        bgModal.classList.add("show");
-      });
-
-      closeModal.addEventListener("click", function () {
-        bgModal.classList.remove("show");
-      });
       
-      async function fetchInstagramViews() {
-        const accessToken = '';
-        const mediaId = '';
+
+      //Carousel Graphic Design
+      const track = document.querySelector('.design-carousel-track');
+      const slides = Array.from(track.children);
+      const nextButton = document.getElementById('next');
+      const prevButton = document.getElementById('prev');
+
+      let currentIndex = 0;
+
+      function updateCarousel() {
+          const slideWidth = slides[0].getBoundingClientRect().width;
+          track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
       }
 
+      nextButton.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateCarousel();
+      });
+
+      prevButton.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          updateCarousel();
+      });
+
+      window.addEventListener('resize', updateCarousel);
     </script>
   </body>
 </html>

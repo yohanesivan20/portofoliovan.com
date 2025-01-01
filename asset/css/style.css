@@ -337,13 +337,13 @@ section.work-experience {
 
 /* End Section Work Experience */
 
-/* Section Portofolio */
-section.portofolio {
+/* Section Portfolio */
+section.portfolio {
   background-color: #000000;
   box-sizing: border-box;
 }
 
-section.portofolio .porto-head {
+section.portfolio .porto-head {
   width: 100%;
   height: 76px;
   background-color: #17d1ac;
@@ -362,6 +362,7 @@ section.portofolio .porto-head {
 .porto-tools {
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
 /* .porto-tools .gap-20 {
@@ -388,6 +389,91 @@ section.portofolio .porto-head {
   font-weight: 800;
   font-style: italic;
   font-size: 18px;
+}
+
+.porto-design-head {
+  background-color: #003444;
+  color: white;  
+}
+
+.porto-design-head h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.porto-design-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.design-carousel-container {
+  display: flex;
+  position: relative;
+  padding: 30px;
+}
+
+.design-carousel-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.round-button {
+  height: 47px;
+  width: 47px;
+  background-color: rgb(0 0 0);
+  border-radius: 30px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.round-button:hover {
+  background-color: #333;
+}
+
+.design-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  cursor: grab;
+}
+
+.design-carousel-track.grabbing {
+  cursor: grabbing;
+}
+
+.design-carousel {
+  overflow: hidden;
+  flex: 3;
+}
+
+.design-carousel-slide {
+  flex: 0 0 40%;
+  position: relative;
+  margin-right: 150px;
+}
+
+.design-carousel-slide img {
+  max-width: 100%;
+  display: block;
+}
+
+.design-carousel-caption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.design-carousel-caption a {
+  color:#151515;
+}
+
+.design-carousel-caption a:hover {
+  color:#005f7c;
+  text-decoration: none;
 }
 
 .porto-video-head {
@@ -425,7 +511,7 @@ section.portofolio .porto-head {
   border-radius: 10px;
 }
 
-/* End Section Portofolio */
+/* End Section Portfolio */
 
 
 /* Section Contact */
@@ -523,7 +609,27 @@ section.credit {
   }
 
   .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-nav {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .navbar-nav.show {
+    display: flex; /* Show menu when toggler is active */
+  }
+
+  .navbar-nav li {
+    text-align: center;
+    margin: 10px 0;
   }
 
   .text-section {
@@ -562,8 +668,48 @@ section.credit {
     padding-right: 20px;
   }
 
+  section.work-experience {
+    padding-left: 10px;
+  }
+
   section.work-experience .work-header-content {
     padding-left: 10px;
     padding-top: 25px;
+  }
+
+  section.portfolio .porto-head {
+    height: 120px;
+  }
+
+  .porto-tools {
+    flex-direction: column;
+  }
+
+  .porto-tools .box {
+    margin-bottom: 20px;
+  }
+
+  .porto-design-content {
+    padding: 0;
+  }
+
+  .design-carousel-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .design-carousel-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .design-carousel-slide {
+    flex: 0 0 100%;
+    position: relative;
+    margin-right: 0;
+    padding: 10px;
   }
 }
